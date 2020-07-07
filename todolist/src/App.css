@@ -1,0 +1,90 @@
+:root{
+  --main-color : rgb(4, 3, 51);
+  --secondary-color : rgb(100, 135, 170);
+  --main-text-color : rgb(255, 255, 255);
+  --button-color: rgb(211, 221, 66);
+  --terinary-color: rgb(55, 38, 82);
+}
+
+
+html, body{
+  background-color: var(--main-color);
+  display: grid;
+  height: 100%;
+}
+
+.APP{
+  background-color: var(--secondary-color);
+  min-height: 800px;
+  width: 600px;
+  margin: 40px auto;
+  border-radius: 8px;
+}
+
+#todo-form input{
+  background-color: var(--main-color) ;
+  height: 60px;
+  width: 400px;
+  border: 0;
+  padding:0 20px ;
+  margin: 20px;
+  font-size: 24px;
+  border-radius: 10px;
+  color: var(--main-text-color);
+}
+
+#todo-form input button:focus{
+  outline: none;
+}
+
+#todo-form input ::placeholder,#todo-form button::placeholder{
+  color: var(--main-text-color);
+}
+
+#todo-form button{
+  height: 60px;
+  width: 100px;
+  border: 0;
+  border-radius: 10px;
+  background-color: var(--button-color);
+  cursor: pointer;
+  font-weight: bolder;
+  font-size: medium;
+}
+
+
+
+.eachItem{
+ width: 550px;
+ color: var(--main-text-color);
+ font-size: 24px;
+ margin: 30px auto;
+ border: 0;
+ height: 70px;
+ background-color: var(--terinary-color); 
+ border-radius: 5px; 
+}
+
+.eachItem input{
+  background-color: transparent;
+  border: 0;
+  font-size: 20px;
+  color: var(--main-text-color);
+}
+
+.eachItem input:focus{
+  outline: none;
+}
+
+.eachItem p{
+  padding: 18px;
+  position: relative;
+}
+
+
+.removeItem{
+  position: absolute;
+  right: 20px;
+  cursor: pointer;
+  font-weight: bolder;
+}
